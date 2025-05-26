@@ -1,0 +1,134 @@
+index.html
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ganhe o Dobro - Venda do Livro</title>
+  <style>
+    /* Reset simples */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #d4af37; /* dourado */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      max-width: 600px;
+      padding: 30px;
+      box-shadow: 0 0 20px #d4af37aa;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    p.description {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      line-height: 1.5;
+      color: #f0d98c;
+    }
+
+    img.cover {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #d4af37cc;
+      margin-bottom: 30px;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .price .original {
+      text-decoration: line-through;
+      color: #b08c27;
+      margin-right: 15px;
+      font-weight: 600;
+    }
+
+    .price .promo {
+      font-weight: 800;
+      font-size: 2rem;
+    }
+
+    button.buy-btn {
+      background: linear-gradient(90deg, #d4af37, #b58925);
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      border-radius: 30px;
+      color: #121212;
+      cursor: pointer;
+      box-shadow: 0 5px 15px #d4af37bb;
+      transition: background 0.3s ease;
+    }
+
+    button.buy-btn:hover {
+      background: linear-gradient(90deg, #b58925, #d4af37);
+      box-shadow: 0 7px 20px #d4af37ee;
+    }
+
+    /* Responsivo */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .price .promo {
+        font-size: 1.6rem;
+      }
+
+      button.buy-btn {
+        width: 100%;
+        padding: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ganhe o Dobro</h1>
+    <img
+      src=https://i.postimg.cc/fL68N6L5/78-A624-EF-4353-496-C-AC2-B-7-E6-B746-C30-D8.png
+      alt="Capa do livro Ganhe o Dobro"
+      class="cover"
+    />
+    <p class="description">
+      Descubra como administrar sua renda para dobrar seus ganhos e conquistar sua liberdade financeira. Um guia prático, direto e eficiente para transformar sua vida financeira.
+    </p>
+    <div class="price">
+      <span class="original">R$ 29,90</span>
+      <span class="promo">R$ 19,90</span>
+    </div>
+    <button class="buy-btn" onclick="comprar()">Comprar Agora</button>
+  </div>
+
+  <script>
+    function comprar() {
+      alert('Obrigado pela compra! Você será redirecionado para a página de pagamento.');
+      // Aqui você pode colocar a URL do seu checkout na Hotmart ou outra plataforma
+      // window.location.href = 'https://link-da-hotmart-ou-pagamento.com';
+    }
+  </script>
+</body>
+</html>
